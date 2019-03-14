@@ -5,12 +5,12 @@ namespace AlibabaCloud\NAS\V20170626;
 use AlibabaCloud\Rpc;
 
 /**
- * Api DescribeRegions
+ * Api CPFSDescribeRegions
  *
  * @method string getPageSize()
  * @method string getPageNumber()
  */
-class DescribeRegions extends Rpc
+class CPFSDescribeRegions extends Rpc
 {
     public $product = 'NAS';
 
