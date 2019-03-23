@@ -2,7 +2,43 @@
 
 namespace AlibabaCloud\NAS\V20170626;
 
+use AlibabaCloud\ApiResolverTrait;
 use AlibabaCloud\Rpc;
+
+/**
+ * Resolve Api based on the method name.
+ *
+ * @method CreateTieringPolicy createTieringPolicy(array $options = [])
+ * @method ModifyTieringPolicy modifyTieringPolicy(array $options = [])
+ * @method DeleteTieringPolicy deleteTieringPolicy(array $options = [])
+ * @method DescribeTieringPolicies describeTieringPolicies(array $options = [])
+ * @method CreateTieringJob createTieringJob(array $options = [])
+ * @method DeleteTieringJob deleteTieringJob(array $options = [])
+ * @method ModifyTieringJob modifyTieringJob(array $options = [])
+ * @method DescribeTieringJobs describeTieringJobs(array $options = [])
+ * @method DescribeZones describeZones(array $options = [])
+ * @method ModifyFileSystem modifyFileSystem(array $options = [])
+ * @method ModifyMountTarget modifyMountTarget(array $options = [])
+ * @method DescribeFileSystems describeFileSystems(array $options = [])
+ * @method DescribeMountTargets describeMountTargets(array $options = [])
+ * @method DescribeRegions describeRegions(array $options = [])
+ * @method ModifyAccessGroup modifyAccessGroup(array $options = [])
+ * @method ModifyAccessRule modifyAccessRule(array $options = [])
+ * @method DeleteAccessGroup deleteAccessGroup(array $options = [])
+ * @method DeleteAccessRule deleteAccessRule(array $options = [])
+ * @method DeleteFileSystem deleteFileSystem(array $options = [])
+ * @method DeleteMountTarget deleteMountTarget(array $options = [])
+ * @method DescribeAccessGroups describeAccessGroups(array $options = [])
+ * @method DescribeAccessRules describeAccessRules(array $options = [])
+ * @method CreateAccessRule createAccessRule(array $options = [])
+ * @method CreateFileSystem createFileSystem(array $options = [])
+ * @method CreateMountTarget createMountTarget(array $options = [])
+ * @method CreateAccessGroup createAccessGroup(array $options = [])
+ */
+class NASApiResolver
+{
+    use ApiResolverTrait;
+}
 
 class V20170626Rpc extends Rpc
 {
@@ -17,24 +53,6 @@ class V20170626Rpc extends Rpc
 
     /** @var string */
     public $serviceCode = 'nas';
-}
-
-/**
- * @method string getAccessGroupName()
- * @method $this withAccessGroupName($value)
- */
-class ExtremeDescribeAccessGroups extends V20170626Rpc
-{
-}
-
-/**
- * @method string getPageSize()
- * @method $this withPageSize($value)
- * @method string getPageNumber()
- * @method $this withPageNumber($value)
- */
-class CPFSDescribeRegions extends V20170626Rpc
-{
 }
 
 /**
@@ -174,62 +192,6 @@ class DescribeTieringJobs extends V20170626Rpc
 }
 
 class DescribeZones extends V20170626Rpc
-{
-}
-
-/**
- * @method string getFsId()
- * @method $this withFsId($value)
- */
-class CPFSDeleteFileSystem extends V20170626Rpc
-{
-}
-
-/**
- * @method string getFsId()
- * @method $this withFsId($value)
- * @method string getPageSize()
- * @method $this withPageSize($value)
- * @method string getPageNumber()
- * @method $this withPageNumber($value)
- */
-class CPFSDescribeFileSystems extends V20170626Rpc
-{
-}
-
-/**
- * @method string getFsSpec()
- * @method $this withFsSpec($value)
- * @method string getVSwitchId()
- * @method $this withVSwitchId($value)
- * @method string getBandwidth()
- * @method $this withBandwidth($value)
- * @method string getVpcId()
- * @method $this withVpcId($value)
- * @method string getZoneId()
- * @method $this withZoneId($value)
- * @method string getNetworkType()
- * @method $this withNetworkType($value)
- * @method string getFsDesc()
- * @method $this withFsDesc($value)
- * @method string getSquashType()
- * @method $this withSquashType($value)
- * @method string getCapacity()
- * @method $this withCapacity($value)
- */
-class CPFSCreateFileSystem extends V20170626Rpc
-{
-}
-
-/**
- * @method string getFsId()
- * @method $this withFsId($value)
- * @method string getLdapUrl()
- * @method $this withLdapUrl($value)
- * @method string getFsDesc()
- * @method $this withFsDesc($value)
- */
-class CPFSModifyFileSystem extends V20170626Rpc
 {
 }
 
