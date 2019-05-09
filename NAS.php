@@ -5,8 +5,8 @@ namespace AlibabaCloud\NAS;
 use AlibabaCloud\Client\Resolver\VersionResolver;
 
 /**
- * @deprecated
+ * @method static V20170626\NASApiResolver v20170626()
  */
-class NASVersion extends VersionResolver
+class NAS extends VersionResolver
 {
 }
